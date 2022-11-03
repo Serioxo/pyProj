@@ -14,7 +14,7 @@ def GenerateNewTicket():
         ticket = int(((ticketid * 16) / 2)) + 1
     else:
 
-        fi.write(str(ticket) + "\n")
+        fi.write("Ticket ID: " + str(ticket) + "\n")
 
     fi.close()
 
