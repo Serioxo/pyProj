@@ -24,5 +24,18 @@ def GenerateNewTicket():
     return ticket
 
 
+def UserPromptTicket():
+    print("#########################################################################\n")
+    print("========= Hello, Please input an issue you are having. =========\n")
 
-print("Ticket ID: " , GenerateNewTicket())
+    TicketIssue = input("")
+
+
+
+def GenerateTicketWithUserInput():
+    UserPromptTicket()
+
+    print("Your Ticket has been Generated Here is the ID of your ticket: ", GenerateNewTicket())
+
+
+GenerateTicketWithUserInput()
